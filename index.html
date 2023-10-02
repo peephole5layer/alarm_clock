@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/lofi.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <title>Lofi sound| keep meditate and the focus</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alarm clock</title>
+    <link rel="stylesheet" href="clock.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f260fee7a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="table">
+        <div class="cell">
+            <h1 id="clock" class="clock"></h1>
+
+            <select id="hours"></select>
+            <select id="minutes"></select>
+            <select id="seconds"></select>
+            <select id="ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+
+            <p>
+                <button id="snooze" class="hide">Snooze</button>
+                <button id="startstop">Set Alarm</button>
+            </p>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+
 </html>
